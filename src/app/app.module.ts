@@ -14,11 +14,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HomeComponent,
     NotFoundComponent
   ],
-  imports: [
+  imports: [ // Sayfa yönlendirmelerinde not-found comp. geliyordu çözümlendi (öncelik ayarlandı).
     BrowserModule,
-    AppRoutingModule,
     PlaceHoldersModule,
-    TablesModule
+    TablesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
