@@ -1,4 +1,11 @@
 <!-- <app-placeholders-home></app-placeholders-home> -->
-<a routerLink="/placeholders">Placeholders</a> 
-<a routerLink="/tables">Tables</a>
-<router-outlet></router-outlet>
+
+<div class="ui container">
+  <div class="ui secondary pointing menu">
+    <a routerLinkActive="active" routerLink="/placeholders" class="item">Placeholders</a>
+    <a routerLinkActive="active" routerLink="/tables" class="item">Tables</a>
+  </div>
+  <div class="ui segment">
+    <router-outlet></router-outlet>
+  </div>
+</div>
