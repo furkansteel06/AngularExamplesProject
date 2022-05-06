@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlaceHoldersModule } from './place-holders/place-holders.module';
-import { TablesModule } from './tables/tables.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -16,7 +14,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [ // Sayfa yönlendirmelerinde not-found comp. geliyordu çözümlendi (öncelik ayarlandı).
     BrowserModule,
-    TablesModule,
     AppRoutingModule
   ],
   providers: [],

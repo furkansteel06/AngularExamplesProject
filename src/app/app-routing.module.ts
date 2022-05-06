@@ -11,6 +11,11 @@ const routes: Routes = [
         (m) => m.PlaceHoldersModule
       ),
   },
+  {
+    path: "tables", // Lazy loading: sadece ihtiyaç halinde component yüklenir.
+    loadChildren: () =>
+      import("./tables/tables.module").then((m) => m.TablesModule),
+  },
   { path: "", component: HomeComponent },
   { path: "**", component: NotFoundComponent }, // "**" bulunmayan tüm path'lerde yönlendirilir.
 ];
