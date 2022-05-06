@@ -16,7 +16,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [ // Sayfa yönlendirmelerinde not-found comp. geliyordu çözümlendi (öncelik ayarlandı).
     BrowserModule,
-    PlaceHoldersModule,
     TablesModule,
     AppRoutingModule
   ],

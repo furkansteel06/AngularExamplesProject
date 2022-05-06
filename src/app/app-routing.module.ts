@@ -1,15 +1,22 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
+import { NotFoundComponent } from "./not-found/not-found.component";
 
 const routes: Routes = [
-  {path:"",component:HomeComponent},
-  {path:"**",component:NotFoundComponent} // "**" bulunmayan tüm path'lerde yönlendirilir.
+  {
+    path: "placeholders", // Lazy loading: sadece ihtiyaç halinde component yüklenir.
+    loadChildren: () =>
+      import("./place-holders/place-holders.module").then(
+        (m) => m.PlaceHoldersModule
+      ),
+  },
+  { path: "", component: HomeComponent },
+  { path: "**", component: NotFoundComponent }, // "**" bulunmayan tüm path'lerde yönlendirilir.
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
