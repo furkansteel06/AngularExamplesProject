@@ -11,7 +11,7 @@ import { PlaceholdersHomeComponent } from './placeholders-home/placeholders-home
     PlaceHoldersRoutingModule
   ],
   exports:[
-    PlaceholdersHomeComponent
+    // PlaceholdersHomeComponent
   ]
 })
 export class PlaceHoldersModule { }
