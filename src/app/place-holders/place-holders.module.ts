@@ -9,6 +9,9 @@ import { PlaceholdersHomeComponent } from './placeholders-home/placeholders-home
   imports: [
     CommonModule,
     PlaceHoldersRoutingModule
+  ],
+  exports:[
+    PlaceholdersHomeComponent
   ]
 })
 export class PlaceHoldersModule { }
