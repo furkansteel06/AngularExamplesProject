@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlaceHoldersModule } from './place-holders/place-holders.module';
+import { TablesModule } from './tables/tables.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PlaceHoldersModule } from './place-holders/place-holders.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PlaceHoldersModule
+    PlaceHoldersModule,
+    TablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
