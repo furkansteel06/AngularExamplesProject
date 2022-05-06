@@ -16,6 +16,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./tables/tables.module").then((m) => m.TablesModule),
   },
+  {
+    path: "lists", // Lazy loading: sadece ihtiyaç halinde component yüklenir.
+    loadChildren: () =>
+      import("./lists/lists.module").then((m) => m.ListsModule),
+  },
   { path: "", component: HomeComponent },
   { path: "**", component: NotFoundComponent }, // "**" bulunmayan tüm path'lerde yönlendirilir.
 ];
