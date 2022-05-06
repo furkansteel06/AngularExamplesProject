@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListsHomeComponent implements OnInit {
 
+  numbers = [
+    { value: 50, label: 'Müşteri' },
+    { value: '3500 TL', label: 'Ciro' },
+    { value: 65, label: 'Yorumlar' }
+  ]
+
   constructor() { }
 
   ngOnInit() {
