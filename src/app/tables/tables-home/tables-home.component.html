@@ -2,23 +2,16 @@
 <app-table></app-table>
 
 <app-divider>Ekstra Bilgiler</app-divider>
-<div class="ui grid">
-  <div class="four wide column">
-    <div class="ui vertical fluid tabular menu">
-      <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{exact : true}" class="item">
-        Sertifikalar
-      </a>
-      <a routerLinkActive="active" routerLink="./companies" class="item">
-        Yabancı Dil Bilgisi
-      </a>
-      <a routerLinkActive="active" routerLink="./partners" class="item">
-        Mezun Olduğu Okul
-      </a>
-    </div>
-  </div>
-  <div class="twelve wide stretched column">
-    <div class="ui segment">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+
+<app-tabs>
+  <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{exact : true}" class="item">
+    Sertifikalar
+  </a>
+  <a routerLinkActive="active" routerLink="./companies" class="item">
+    Yabancı Dil Bilgisi
+  </a>
+  <a routerLinkActive="active" routerLink="./partners" class="item">
+    Mezun Olduğu Okul
+  </a>
+</app-tabs>
+
