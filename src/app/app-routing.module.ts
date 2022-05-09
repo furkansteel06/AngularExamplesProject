@@ -21,6 +21,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./lists/lists.module").then((m) => m.ListsModule),
   },
+  {
+    path: "popups", // Lazy loading: sadece ihtiyaç halinde component yüklenir.
+    loadChildren: () =>
+      import("./popups/popups.module").then((m) => m.PopupsModule),
+  },
   { path: "", component: HomeComponent },
   { path: "**", component: NotFoundComponent }, // "**" bulunmayan tüm path'lerde yönlendirilir.
 ];
@@ -29,4 +34,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
