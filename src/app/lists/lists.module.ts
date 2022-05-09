@@ -5,9 +5,10 @@ import { ListsRoutingModule } from './lists-routing.module';
 import { ListsHomeComponent } from './lists-home/lists-home.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { SharedModule } from '../shared/shared.module';
+import { ItemlistComponent } from './itemlist/itemlist.component';
 
 @NgModule({
-  declarations: [ListsHomeComponent, StatisticsComponent],
+  declarations: [ListsHomeComponent, StatisticsComponent, ItemlistComponent],
   imports: [
     CommonModule,
     ListsRoutingModule,

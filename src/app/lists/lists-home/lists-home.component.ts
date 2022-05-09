@@ -11,7 +11,20 @@ export class ListsHomeComponent implements OnInit {
     { value: 50, label: 'Müşteri' },
     { value: '3500 TL', label: 'Ciro' },
     { value: 65, label: 'Yorumlar' }
-  ]
+  ];
+
+  images = [
+    {
+      image: '/assets/images/dresser.jpeg',
+      title: 'Şifonyer',
+      description: 'Her türlü eşyanızı koyabileceğiniz şifonyer'
+    },
+    {
+      image: '/assets/images/couch.jpeg',
+      title: 'Kanepe',
+      description: 'Oturması muhteşem rahat koltuk'
+    }
+  ];
 
   constructor() { }
 
